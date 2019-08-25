@@ -1,0 +1,23 @@
+body {
+    background-color: #efeee7;
+}
+
+p {
+    font-size: 14px;
+}
+
+.navbar-dark {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar-dark .navbar-brand
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.border {
+    border-width:3px !important;
+}

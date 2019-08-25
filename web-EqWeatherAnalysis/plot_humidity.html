@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Equatorial Weather Analysis</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <link rel="stylesheet" href="./resources/style-fox-proj.css">
+</head>
+
+<body>
+
+    <!-- Navbar with dark background -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand bg-info" href="./index.html">Equatorial Weather Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse pr-5" id="navbarSupportedContent">
+
+            <!-- ml-auto moves the menu items to the right side -->
+            <ul class="navbar-nav ml-auto">
+            
+            <!-- Home link -->
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+
+            <!-- Data link -->
+            <li class="nav-item">
+                <a class="nav-link" href="./data.html">Data </a>
+            </li>
+
+            <!-- Comparisons link -->
+            <li class="nav-item">
+                    <a class="nav-link" href="./comparisons.html">Comparisons</a>
+            </li>
+            
+            <!-- Dropdown menu for 4 different Plots links -->
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./plot_temp.html">Max Temp</a>
+                <a class="dropdown-item active" href="./plot_humidity.html">Humidity</a>
+                <a class="dropdown-item" href="./plot_cloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="./plot_wind.html">Wind Speed</a>
+                </div>
+            </li>
+
+            <!-- Dropdown menu for my other site links -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://foxms1010.github.io/Projects.html">Project Index</a>
+                <a class="dropdown-item" href="https://foxms1010.github.io/index.html">My Profile</a>
+                </div>
+            </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--  Main Content of Page using grid -->
+    <div class="container mt-5 mb-5" >
+        <div class="row">
+
+          <!-- Main column -->
+          <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Equatorial Weather Analysis - Humidity:</h5>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/Lat_v_Humidity.png" class="ml-3 mr-3 mb-3 mt-3" width="400" height="auto">
+                    </div>
+                    <p class="card-text">There is a dense collection of cities near or at 100% humidity very close 
+                        to 0 deg latitude (equator). Very few cities between the equator and Tropic of Cancer have humidity levels
+                        below 60%. Cities outside of that range show a broader diversity of humidity levels between 0 and 100%.
+                    </P>
+                     <p class="card-text">   Note:  There were two cities that indicated humidity levels over 100%.  These were discarded.
+                    </p>  
+                </div>
+            </div>
+          </div>
+
+          <!-- Secondary column -->
+          <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Visualizations</h5>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md pl-0 pr-0">
+                                <a href="./plot_temp.html"><img src="images/Lat_v_MaxTemp.png" width="150" alt="Temperature chart"></a>
+                            </div>
+                            <div class="col-md pl-0 pr-0">
+                                <a href="./plot_humidity.html"><img class="border border-info" src="images/Lat_v_Humidity.png" width="150" alt="Humidity chart"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md pl-0 pr-0">
+                                <a href="./plot_cloud.html"><img src="images/Lat_v_Cloudiness.png" width="150" alt="Cloudiness chart"></a>
+                            </div>
+                            <div class="col-md pl-0 pr-0">
+                                <a href="./plot_wind.html"><img src="images/Lat_v_WindSpeed.png" width="150" alt="Wind chart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    <!-- Bootstrap JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
