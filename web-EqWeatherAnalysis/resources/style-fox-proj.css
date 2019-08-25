@@ -10,6 +10,14 @@ p {
     padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
+    background-color: #000000 !important;
+}
+
+/* change background color of navbar on small screens to satisfy project requirement */
+@media (max-width:800px) {
+    .navbar-dark {
+        background-color: #17a2b8 !important;
+    }
 }
 
 .navbar-dark .navbar-brand
