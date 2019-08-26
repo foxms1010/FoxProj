@@ -13,12 +13,31 @@ p {
     background-color: #000000 !important;
 }
 
-/* change background color of navbar on small screens to satisfy project requirement */
+/* change background color of navbar on small screens */
 @media (max-width:800px) {
     .navbar-dark {
         background-color: #17a2b8 !important;
     }
 }
+
+/* reduce size of plots as screen size shrinks to keep them within the container */
+@media (max-width:500px) {
+    .img-plot {
+        width: 350px;
+    }
+} 
+
+@media (max-width:400px) {
+    .img-plot {
+        width: 250px;
+    }
+} 
+
+@media (max-width:300px) {
+    .img-plot {
+        width: 150px;
+    }
+} 
 
 .navbar-dark .navbar-brand
 {
