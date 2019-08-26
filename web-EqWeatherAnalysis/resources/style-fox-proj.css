@@ -24,18 +24,21 @@ p {
 @media (max-width:500px) {
     .img-plot {
         width: 350px;
+        height: auto;
     }
 } 
 
 @media (max-width:400px) {
     .img-plot {
         width: 250px;
+        height: auto;
     }
 } 
 
 @media (max-width:300px) {
     .img-plot {
         width: 150px;
+        height: auto;
     }
 } 
 
