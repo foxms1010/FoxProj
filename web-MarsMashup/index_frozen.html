@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Mash-up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Misson to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get New Mars Data!</a></p>
+    </div>
+
+    <!-- Mars  News -->
+    <div class="row pb-4">
+      <div class="col-md-12" id="mars_news">
+        <h2 class="heading">Latest Mars News</h2>
+          <h5>
+NASA Invites Students to Name Mars 2020 Rover
+</h5>
+          
+Through Nov. 1, K-12 students in the U.S. are encouraged to enter an essay contest to name NASA&#39;s next Mars rover.
+
+      </div>
+    </div>
+
+    <!-- Mars  Image, weather, facts -->
+    <div class="row pb-4">
+      <div class="col-md-8" id="mars_image">
+        <h2 class="heading">Featured Mars Image</h2>
+          <img class="img-fluid" src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18614_hires.jpg" alt="mars image">
+      </div>
+      <div class="col-md-4">
+        <div class="row pb-4">
+          <div class="col-md-12" id="mars_weather">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Current Weather on Mars</h4>
+                <p class="card-text">sol 263 (2019-08-23) low -100.9ºC (-149.6ºF) high -27.2ºC (-17.0ºF)
+winds from the SW at 4.1 m/s (9.2 mph) gusting to 18.3 m/s (40.9 mph)
+pressure at 7.60 hPa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="mars_facts">
+            <h4 class="heading">Mars Facts</h4>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Equatorial Diameter:</td>
+      <td>6,792 km</td>
+    </tr>
+    <tr>
+      <td>Polar Diameter:</td>
+      <td>6,752 km</td>
+    </tr>
+    <tr>
+      <td>Mass:</td>
+      <td>6.39 × 10^23 kg (0.11 Earths)</td>
+    </tr>
+    <tr>
+      <td>Moons:</td>
+      <td>2 (Phobos &amp; Deimos)</td>
+    </tr>
+    <tr>
+      <td>Orbit Distance:</td>
+      <td>227,943,824 km (1.38 AU)</td>
+    </tr>
+    <tr>
+      <td>Orbit Period:</td>
+      <td>687 days (1.9 years)</td>
+    </tr>
+    <tr>
+      <td>Surface Temperature:</td>
+      <td>-87 to -5 °C</td>
+    </tr>
+    <tr>
+      <td>First Record:</td>
+      <td>2nd millennium BC</td>
+    </tr>
+    <tr>
+      <td>Recorded By:</td>
+      <td>Egyptian astronomers</td>
+    </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mars Hemispheres -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="heading">Mars Hemispheres</h2>
+      </div>
+    </div>
+
+    <!-- iterate through hemisphere list skip adding new row if even numbered item -->
+    
+
+      
+        <div class="row pb-2">
+      
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src=https://astrogeology.usgs.gov/cache/images/cfa62af2557222a02478f1fcd781d445_cerberus_enhanced.tif_full.jpg alt="mars hemisphere image">
+          <div class="card-body">
+            <h5 class="card-title">Cerberus Hemisphere Enhanced</h5>
+          </div>
+        </div>
+      </div>
+            
+    
+
+      
+        <!-- don't add new row, do nothing here -->
+      
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src=https://astrogeology.usgs.gov/cache/images/3cdd1cbf5e0813bba925c9030d13b62e_schiaparelli_enhanced.tif_full.jpg alt="mars hemisphere image">
+          <div class="card-body">
+            <h5 class="card-title">Schiaparelli Hemisphere Enhanced</h5>
+          </div>
+        </div>
+      </div>
+      
+        <!-- end row -->
+        </div>
+            
+    
+
+      
+        <div class="row pb-2">
+      
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src=https://astrogeology.usgs.gov/cache/images/ae209b4e408bb6c3e67b6af38168cf28_syrtis_major_enhanced.tif_full.jpg alt="mars hemisphere image">
+          <div class="card-body">
+            <h5 class="card-title">Syrtis Major Hemisphere Enhanced</h5>
+          </div>
+        </div>
+      </div>
+            
+    
+
+      
+        <!-- don't add new row, do nothing here -->
+      
+      <div class="col-md-6">
+        <div class="card">
+          <img class="card-img-top" src=https://astrogeology.usgs.gov/cache/images/7cf2da4bf549ed01c17f206327be4db7_valles_marineris_enhanced.tif_full.jpg alt="mars hemisphere image">
+          <div class="card-body">
+            <h5 class="card-title">Valles Marineris Hemisphere Enhanced</h5>
+          </div>
+        </div>
+      </div>
+      
+        <!-- end row -->
+        </div>
+            
+    
+
+  </div>
+</body>
+
+</html>
